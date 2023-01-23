@@ -53,8 +53,6 @@ function App() {
     PreviousFocusEl.focus();
   }
 
-
-
   return (
     <div className="container">
       <header>
@@ -62,8 +60,7 @@ function App() {
       </header>
      {
       isEditing && <EditForm editedTask={editedTask} updateTask={updateTask} closeEditMode={closeEditMode}/>
-     }
-      
+     }      
       <CustomForm addTask={addTask} />
       {
         tasks && <TaskList tasks={tasks} deleteTask={deleteTask} toggleTask={toggleTask} enterEditMode={enterEditMode}/>
